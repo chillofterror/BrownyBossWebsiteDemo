@@ -440,185 +440,90 @@ footer {
 /* MOBILE RESPONSIVENESS                    */
 /* ======================================== */
 
-/* TABLETS AND SMALL LAPTOPS */
-
-@media (max-width: 1100px) {
-
-    nav {
-        padding: 0 30px; /* Reduces navigation side spacing */
-    }
-
-    .section2 {
-        padding: 50px 30px; /* Reduces section spacing */
-    }
-
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* Displays two product cards per row */
-    }
-
-    .footer-container {
-        flex-wrap: wrap; /* Allows footer elements to move onto another row */
-        justify-content: center; /* Centers the footer elements */
-    }
-}
-
-
-/* ======================================== */
-/* MOBILE PHONES                            */
-/* ======================================== */
+/* MOBILE PHONES */
 
 @media (max-width: 600px) {
 
-    /* HEADER */
+header {  
+    height: auto; /* Allows the header to grow based on its content */  
+}  
 
-    header {
-        height: auto;
-    }
+nav {  
+    flex-wrap: wrap; /* Allows navigation elements to wrap onto multiple rows */  
+    justify-content: center; /* Centers navigation elements */  
+    gap: 10px; /* Adds spacing between navigation elements */  
+    padding: 10px 15px; /* Reduces navigation padding */  
+}  
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 15px;
-    }
+header .logo a {  
+    width: 150px; /* Makes the header logo smaller */  
+    height: 60px; /* Reduces the logo container height */  
+}  
 
-    header .logo a {
-        width: 150px;
-        height: 60px;
-    }
+.nav-links {  
+    order: 3; /* Moves navigation links below the logo and cart */  
+    width: 100%; /* Makes the navigation links occupy a full row */  
+    justify-content: center; /* Centers the links */  
+    flex-wrap: wrap; /* Allows links to wrap on narrow screens */  
+    gap: 15px; /* Reduces spacing between links */  
+}  
 
-    /* NAVIGATION LINKS */
+.section1 {  
+    height: auto; /* Allows the hero height to adjust to its content */  
+    min-height: 350px; /* Keeps the hero section at least 350px tall */  
+    background-position: center; /* Keeps the background image centered */  
+}  
 
-    .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+.section1-text-container {  
+    margin: 60px 20px; /* Adds spacing around the hero text */  
+}  
 
-    /* ==================================== */
-    /* SECTION 1 - HERO BACKGROUND          */
-    /* ==================================== */
+.LowerText {  
+    font-size: 36px; /* Makes the hero heading smaller for mobile screens */  
+}  
 
-    .section1 {
-        width: 100%;
-        height: auto;
-        min-height: 350px;
+.section2 {  
+    padding: 40px 20px; /* Reduces Best Sellers section spacing */  
+}  
 
-        /* Background image */
-        background-image: url("../image/backround for secshone 1.png");
+.products-grid {  
+    grid-template-columns: 1fr; /* Displays one product card per row */  
+}  
 
-        /* Fit the full image width */
-        background-size: 100% auto;
+.section2-header h2 {  
+    font-size: 1.6rem; /* Makes the section heading smaller */  
+}  
 
-        /* Position image at the top */
-        background-position: center top;
+.features-container {  
+    grid-template-columns: repeat(2, 1fr); /* Displays two features per row */  
+    gap: 25px 0; /* Adds vertical spacing between feature rows */  
+}  
 
-        /* Prevent image repeating */
-        background-repeat: no-repeat;
+.feature:nth-child(2) {  
+    border-right: none; /* Removes the divider after the second feature */  
+}  
 
-        /* Fill any remaining space */
-        background-color: #100d0b;
+.feature img {  
+    width: 36px; /* Makes feature icons slightly smaller */  
+    height: 36px; /* Keeps feature icons square */  
+}  
 
-        display: flex;
-        align-items: center;
-    }
+.feature p {  
+    font-size: 11px; /* Reduces feature text size */  
+}  
 
-    /* HERO TEXT CONTAINER */
+.footer-container {  
+    flex-direction: column; /* Stacks footer elements vertically */  
+    gap: 25px; /* Adds spacing between footer elements */  
+}  
 
-    .section1-text-container {
-        margin: 45px 20px;
-        width: 100%;
-    }
+.footer-nav {  
+    flex-wrap: wrap; /* Allows footer navigation links to wrap */  
+    justify-content: center; /* Centers footer navigation */  
+    gap: 20px; /* Reduces spacing between footer links */  
+}  
 
-    /* SMALL HEADING */
-
-    .UperText {
-        font-size: 10px;
-        letter-spacing: 2px;
-        line-height: 1.5;
-    }
-
-    /* MAIN HEADING */
-
-    .LowerText {
-        font-size: clamp(30px, 8vw, 38px);
-        line-height: 1.15;
-        margin-top: 8px;
-    }
-
-    /* HERO DESCRIPTION */
-
-    .LowestText {
-        font-size: 13px;
-        line-height: 1.6;
-        margin-top: 12px;
-    }
-
-    /* HERO BUTTON */
-
-    .Menu-Button {
-        display: inline-block;
-        padding: 12px 24px;
-        font-size: 14px;
-        margin-top: 12px;
-    }
-
-    /* ==================================== */
-    /* SECTION 2 - BEST SELLERS             */
-    /* ==================================== */
-
-    .section2 {
-        padding: 40px 20px;
-    }
-
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section2-header h2 {
-        font-size: 1.6rem;
-    }
-
-    /* ==================================== */
-    /* SECTION 3 - FEATURES                 */
-    /* ==================================== */
-
-    .features-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px 0;
-    }
-
-    .feature:nth-child(2) {
-        border-right: none;
-    }
-
-    .feature img {
-        width: 36px;
-        height: 36px;
-    }
-
-    .feature p {
-        font-size: 11px;
-    }
-
-    /* ==================================== */
-    /* FOOTER                               */
-    /* ==================================== */
-
-    .footer-container {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .footer-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .footer-text p {
-        white-space: normal;
-    }
+.footer-text p {  
+    white-space: normal; /* Allows the footer slogan to wrap on small screens */  
+}
 }
