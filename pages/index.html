@@ -1,0 +1,311 @@
+<!DOCTYPE html> <!-- Tells the browser this document uses HTML5 -->
+<html lang="en"> <!-- Starts the HTML document and sets its language to English -->
+
+<head> <!-- Contains website settings and external resources -->
+
+    <meta charset="UTF-8"> <!-- Allows special characters and symbols to display correctly -->
+
+    <title>Brownie Boss | Home</title> <!-- Text displayed in the browser tab -->
+
+    <link rel="stylesheet" href="../styles/stylesHome.css"> <!-- Connects the external CSS file -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website adapt to different screen sizes -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!-- Loads Font Awesome icons for social media -->
+
+</head> <!-- Ends the head section -->
+
+<body> <!-- Starts all visible website content -->
+
+    <!-- HEADER: Contains the logo, navigation links and shopping cart -->
+    <header> <!-- Starts the website header -->
+
+        <nav> <!-- Starts the navigation bar -->
+
+            <!-- LOGO -->
+            <div class="desktop-item logo"> <!-- Container for the website logo -->
+                <a href="index.html">Browny Boss logo</a> <!-- Clickable logo that returns to the homepage -->
+            </div> <!-- Ends the logo container -->
+
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links"> <!-- Creates a list of navigation links -->
+
+                <li><a href="index.html" class="button-home active-page">Home</a></li> <!-- Homepage link, highlighted as the active page -->
+
+                <li><a href="menu.html" class="button-menu">Menu</a></li> <!-- Opens the menu page -->
+
+                <li><a href="locations.html" class="button-locations">Locations</a></li> <!-- Opens the locations page -->
+
+                <li><a href="contact.html" class="desktop-contacts">Contact</a></li> <!-- Opens the contact page -->
+
+            </ul> <!-- Ends the navigation links list -->
+
+            <!-- SHOPPING CART -->
+            <div class="desktop-item cart"> <!-- Container for the shopping cart -->
+
+                <a href="cart.html" class="cart">Cart</a> <!-- Shopping cart link; destination has not been set yet -->
+
+            </div> <!-- Ends the shopping cart container -->
+
+        </nav> <!-- Ends the navigation bar -->
+
+    </header> <!-- Ends the header -->
+
+
+    <!-- SECTION 1: Main hero section with the background image and welcome text -->
+    <section class="section1"> <!-- Starts the first section -->
+
+        <div class="section1-text-container"> <!-- Groups the hero text and button together -->
+
+            <h6 class="UperText">PREMIUM ARTISAN BROWNIES</h6> <!-- Small introductory text above the main heading -->
+
+            <h1 class="LowerText">Freshly Baked.<br>Unforgettable</h1> <!-- Main website heading; br moves the second part to a new line -->
+
+            <h6 class="LowestText">Rich, chocolatey, handmade.<br>Because life is better with brownies.</h6> <!-- Description below the heading -->
+
+            <a href="menu.html" class="Menu-Button">Explore Our Menu</a> <!-- Button-style link that opens the menu page -->
+
+        </div> <!-- Ends the hero text container -->
+
+    </section> <!-- Ends Section 1 -->
+
+
+    <!-- SECTION 2: Displays the four best-selling brownies -->
+    <section class="section2"> <!-- Starts the Best Sellers section -->
+
+        <div class="section2-header"> <!-- Container for the section title and View Menu link -->
+
+            <h2>Our Best Sellers</h2> <!-- Heading for the Best Sellers section -->
+
+            <a href="menu.html" class="view-menu-link">View Menu &rarr;</a> <!-- Link to the menu page; &rarr; displays a right arrow -->
+
+        </div> <!-- Ends the section header -->
+
+
+        <!-- PRODUCT GRID: Arranges the brownie cards into columns -->
+        <div class="products-grid"> <!-- Starts the product grid -->
+
+
+            <!-- PRODUCT 1: Classic Chocolate -->
+            <div class="product-card"> <!-- Starts the first product card -->
+
+                <img src="../image/Chocolate Brownie.png" alt="Classic Chocolate Brownie"> <!-- Displays the chocolate brownie image -->
+
+                <div class="product-info"> <!-- Contains the product name, description, price and button -->
+
+                    <h3>Classic Chocolate</h3> <!-- Product name -->
+
+                    <p class="product-desc">Rich chocolate, soft & fudgy.</p> <!-- Short product description -->
+
+                    <div class="product-footer"> <!-- Groups the price and Add to Cart button -->
+
+                        <span class="price">$10</span> <!-- Displays the product price -->
+
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Button intended to add this product to the cart; requires JavaScript -->
+
+                    </div> <!-- Ends the product footer -->
+
+                </div> <!-- Ends the product information -->
+
+            </div> <!-- Ends the first product card -->
+
+
+            <!-- PRODUCT 2: Raspberry Brownie -->
+            <div class="product-card"> <!-- Starts the second product card -->
+
+                <img src="../image/Raspberry Brownie.png" alt="Raspberry Brownie"> <!-- Displays the raspberry brownie image -->
+
+                <div class="product-info"> <!-- Contains the product information -->
+
+                    <h3>Raspberry Brownie</h3> <!-- Product name -->
+
+                    <p class="product-desc">Fruity, rich and irresistible.</p> <!-- Product description -->
+
+                    <div class="product-footer"> <!-- Groups the price and button -->
+
+                        <span class="price">$11</span> <!-- Displays the price -->
+
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Add to Cart button; requires JavaScript -->
+
+                    </div> <!-- Ends the product footer -->
+
+                </div> <!-- Ends the product information -->
+
+            </div> <!-- Ends the second product card -->
+
+
+            <!-- PRODUCT 3: Salted Caramel -->
+            <div class="product-card"> <!-- Starts the third product card -->
+
+                <img src="../image/Salted Caramel Brownie.png" alt="Salted Caramel Brownie"> <!-- Displays the salted caramel brownie image -->
+
+                <div class="product-info"> <!-- Contains the product information -->
+
+                    <h3>Salted Caramel</h3> <!-- Product name -->
+
+                    <p class="product-desc">Sweet, salty, perfect.</p> <!-- Product description -->
+
+                    <div class="product-footer"> <!-- Groups the price and button -->
+
+                        <span class="price">$10</span> <!-- Displays the price -->
+
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Add to Cart button; requires JavaScript -->
+
+                    </div> <!-- Ends the product footer -->
+
+                </div> <!-- Ends the product information -->
+
+            </div> <!-- Ends the third product card -->
+
+
+            <!-- PRODUCT 4: Oreo Brownie -->
+            <div class="product-card"> <!-- Starts the fourth product card -->
+
+                <img src="../image/Oreo Brownie.png" alt="Oreo Brownie"> <!-- Displays the Oreo brownie image -->
+
+                <div class="product-info"> <!-- Contains the product information -->
+
+                    <h3>Oreo Brownie</h3> <!-- Product name -->
+
+                    <p class="product-desc">Chocolate meets classic.</p> <!-- Product description -->
+
+                    <div class="product-footer"> <!-- Groups the price and button -->
+
+                        <span class="price">$11</span> <!-- Displays the price -->
+
+                        <button class="add-to-cart-btn">Add to Cart</button> <!-- Add to Cart button; requires JavaScript -->
+
+                    </div> <!-- Ends the product footer -->
+
+                </div> <!-- Ends the product information -->
+
+            </div> <!-- Ends the fourth product card -->
+
+        </div> <!-- Ends the products grid -->
+
+    </section> <!-- Ends Section 2 -->
+
+
+    <!-- SECTION 3: Shows four reasons to choose Brownie Boss -->
+    <section class="section3"> <!-- Starts the features section -->
+
+        <div class="features-container"> <!-- Container that arranges the four features in columns -->
+
+
+            <!-- FEATURE 1: Handmade -->
+            <div class="feature"> <!-- Starts the first feature -->
+
+                <img src="../image/handmade icon.png" alt="Handmade"> <!-- Displays the handmade leaf icon -->
+
+                <p>Handmade<br>with love</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the first feature -->
+
+
+            <!-- FEATURE 2: Premium Ingredients -->
+            <div class="feature"> <!-- Starts the second feature -->
+
+                <img src="../image/prominum ingrident icon.png" alt="Premium"> <!-- Displays the premium ingredients icon -->
+
+                <p>Premium<br>ingredients</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the second feature -->
+
+
+            <!-- FEATURE 3: Fresh Daily -->
+            <div class="feature"> <!-- Starts the third feature -->
+
+                <img src="../image/fresh dayly icon.png" alt="Delivery"> <!-- Displays the delivery truck icon -->
+
+                <p>Fresh daily</p> <!-- Text describing daily freshness -->
+
+            </div> <!-- Ends the third feature -->
+
+
+            <!-- FEATURE 4: Local Business -->
+            <div class="feature"> <!-- Starts the fourth feature -->
+
+                <img src="../image/lcal biznes icon.png" alt="Local business"> <!-- Displays the shield icon -->
+
+                <p>Local<br>business</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the fourth feature -->
+
+        </div> <!-- Ends the features container -->
+
+    </section> <!-- Ends Section 3 -->
+
+
+    <!-- FOOTER: Bottom area containing the logo, links, social media and slogan -->
+    <footer> <!-- Starts the footer -->
+
+        <div class="footer-container"> <!-- Main container for all footer elements -->
+
+
+            <!-- FOOTER LOGO -->
+            <div class="footer-logo"> <!-- Container for the footer logo -->
+
+                <a href="index.html"> <!-- Makes the logo clickable and links to the homepage -->
+
+                    <img src="../image/Brownie Boss Crown Logo.png" alt="Brownie Boss"> <!-- Displays the Brownie Boss logo -->
+
+                </a> <!-- Ends the logo link -->
+
+            </div> <!-- Ends the footer logo container -->
+
+
+            <!-- FOOTER NAVIGATION -->
+            <div class="footer-nav"> <!-- Groups the footer navigation links -->
+
+                <a href="index.html">Home</a> <!-- Homepage link -->
+
+                <a href="menu.html">Menu</a> <!-- Menu page link -->
+
+                <a href="locations.html">Locations</a> <!-- Locations page link -->
+
+                <a href="contact.html">Contact</a> <!-- Contact page link -->
+
+            </div> <!-- Ends footer navigation -->
+
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-socials"> <!-- Container for the social media links -->
+
+                <a href="https://www.instagram.com/" aria-label="Instagram"> <!-- Link to Instagram; aria-label describes the icon for accessibility -->
+
+                    <i class="fa-brands fa-instagram"></i> <!-- Displays the Instagram icon using Font Awesome -->
+
+                </a> <!-- Ends Instagram link -->
+
+                <a href="https://www.facebook.com/" aria-label="Facebook"> <!-- Link to Facebook -->
+
+                    <i class="fa-brands fa-facebook-f"></i> <!-- Displays the Facebook icon -->
+
+                </a> <!-- Ends Facebook link -->
+
+                <a href="https://www.tiktok.com/" aria-label="TikTok"> <!-- Link to TikTok -->
+
+                    <i class="fa-brands fa-tiktok"></i> <!-- Displays the TikTok icon -->
+
+                </a> <!-- Ends TikTok link -->
+
+            </div> <!-- Ends the social media container -->
+
+
+            <!-- FOOTER SLOGAN -->
+            <div class="footer-text"> <!-- Container for the footer slogan -->
+
+                <p>Life is better with brownies. <span>♥</span></p> <!-- Displays the slogan; span allows the heart to have a separate color -->
+
+            </div> <!-- Ends the slogan container -->
+
+        </div> <!-- Ends the footer container -->
+
+    </footer> <!-- Ends the footer -->
+
+    <!-- Makes Add to Cart buttons work -->
+<script src="../scripts/addToCart.js"></script>
+
+</body> <!-- Ends the visible website content -->
+
+</html> <!-- Ends the HTML document -->

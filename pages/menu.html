@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../styles/stylesMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header> <!-- Starts the website header -->
+
+        <nav> <!-- Starts the navigation bar -->
+
+            <!-- LOGO -->
+            <div class="desktop-item logo"> <!-- Container for the website logo -->
+                <a href="index.html">Browny Boss logo</a> <!-- Clickable logo that returns to the homepage -->
+            </div> <!-- Ends the logo container -->
+
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links"> <!-- Creates a list of navigation links -->
+
+                <li><a href="index.html" class="button-home">Home</a></li> <!-- Homepage link, highlighted as the active page -->
+
+                <li><a href="menu.html" class="button-menu active-page">Menu</a></li> <!-- Opens the menu page -->
+
+                <li><a href="locations.html" class="button-locations">Locations</a></li> <!-- Opens the locations page -->
+
+                <li><a href="contact.html" class="desktop-contacts">Contact</a></li> <!-- Opens the contact page -->
+
+            </ul> <!-- Ends the navigation links list -->
+
+            <!-- SHOPPING CART -->
+            <div class="desktop-item cart"> <!-- Container for the shopping cart -->
+
+                <a href="cart.html" class="cart">Cart</a> <!-- Shopping cart link; destination has not been set yet -->
+
+            </div> <!-- Ends the shopping cart container -->
+
+        </nav> <!-- Ends the navigation bar -->
+
+    </header> <!-- Ends the header -->
+
+    <section class="section1"> <!-- Starts the first section -->
+
+        <div class="section1-text-container"> <!-- Groups the hero text and button together -->
+
+            <h6 class="UperText">OUR MENU</h6> <!-- Small introductory text above the main heading -->
+
+            <h1 class="LowerText">Discover Our</h1> <!-- Main website heading; br moves the second part to a new line -->
+
+            <h6 class="LowestText">Handmade. Rich. Unforgettable. <br> Explore our full range of premium brownies, <br> crafted with the finest ingredients.</h6> <!-- Description below the heading -->
+
+            <a href="menu.html" class="Menu-Button">Explore Our Menu</a> <!-- Button-style link that opens the menu page -->
+
+        </div> <!-- Ends the hero text container -->
+
+    </section>
+
+    <section class="section2">
+
+        <div class="products-Buttons-Grid">
+            <div>
+                <Button class="Button active" data-filter="all">
+                    All
+                </Button>
+            </div>
+            <div>
+                <Button class="Button" data-filter="classic">
+                    Classic
+                </Button>
+            </div>
+            <div>
+                <Button class="Button" data-filter="fruity">
+                    Fruity
+                </Button>
+            </div>
+            <div>
+                <Button class="Button" data-filter="caramel">
+                    Caramel
+                </Button>
+            </div>
+            <div>
+                <Button class="Button" data-filter="cookies">
+                    Cookies
+                </Button>
+            </div>
+            <div>
+                <Button class="Button" data-filter="specials">
+                    Specials
+                </Button>
+            </div>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- PRODUCT 1: Classic Chocolate -->
+            <div class="product-card" data-category="classic">
+                <img src="../image/Chocolate Brownie.png" alt="Classic Chocolate Brownie">
+                <div class="product-info">
+                    <h3>Classic Chocolate</h3>
+                    <p class="product-desc">Rich chocolate, soft & fudgy.</p>
+                    <div class="product-footer">
+                        <span class="price">$10</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2: Raspberry Brownie -->
+            <div class="product-card" data-category="fruity">
+                <img src="../image/Raspberry Brownie.png" alt="Raspberry Brownie">
+                <div class="product-info">
+                    <h3>Raspberry Brownie</h3>
+                    <p class="product-desc">Fruity, rich and irresistible.</p>
+                    <div class="product-footer">
+                        <span class="price">$11</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3: Salted Caramel -->
+            <div class="product-card" data-category="caramel">
+                <img src="../image/Salted Caramel Brownie.png" alt="Salted Caramel Brownie">
+                <div class="product-info">
+                    <h3>Salted Caramel</h3>
+                    <p class="product-desc">Sweet, salty, perfect.</p>
+                    <div class="product-footer">
+                        <span class="price">$10</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4: Oreo Brownie -->
+            <div class="product-card" data-category="cookies">
+                <img src="../image/Oreo Brownie.png" alt="Oreo Brownie">
+                <div class="product-info">
+                    <h3>Oreo Brownie</h3>
+                    <p class="product-desc">Chocolate meets classic.</p>
+                    <div class="product-footer">
+                        <span class="price">$11</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5: Nutella Brownie -->
+            <div class="product-card" data-category="classic">
+                <img src="../image/Nutella Brownie.png" alt="Nutella Brownie">
+                <div class="product-info">
+                    <h3>Nutella Brownie</h3>
+                    <p class="product-desc">Rich Nutella & hazelnuts.</p>
+                    <div class="product-footer">
+                        <span class="price">$11</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card" data-category="fruity">
+                <img src="../image/White Chocolate Raspberry.png" alt="White Chocolate Raspberry">
+                <div class="product-info">
+                    <h3>White Chocolate Raspberry</h3>
+                    <p class="product-desc">Smooth white chocolate & berries.</p>
+                    <div class="product-footer">
+                        <span class="price">$10</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="product-card" data-category="classic">
+                <img src="../image/Peanut Butter Brownie.png" alt="Peanut Butter Brownie">
+                <div class="product-info">
+                    <h3>Peanut Butter Brownie</h3>
+                    <p class="product-desc">Rich, nutty, indulgent.</p>
+                    <div class="product-footer">
+                        <span class="price">$12</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="product-card" data-category="classic">
+                <img src="../image/Triple Chocolate Brownie.png" alt="Triple Chocolate Brownie">
+                <div class="product-info">
+                    <h3>Triple Chocolate Brownie</h3>
+                    <p class="product-desc">Three kinds of chocolate.</p>
+                    <div class="product-footer">
+                        <span class="price">$11</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Closes products-grid once -->
+    </section>
+
+    <footer> <!-- Starts the footer -->
+
+        <div class="footer-container"> <!-- Main container for all footer elements -->
+
+
+            <!-- FOOTER LOGO -->
+            <div class="footer-logo"> <!-- Container for the footer logo -->
+
+                <a href="index.html"> <!-- Makes the logo clickable and links to the homepage -->
+
+                    <img src="../image/Brownie Boss Crown Logo.png" alt="Brownie Boss"> <!-- Displays the Brownie Boss logo -->
+
+                </a> <!-- Ends the logo link -->
+
+            </div> <!-- Ends the footer logo container -->
+
+
+            <!-- FOOTER NAVIGATION -->
+            <div class="footer-nav"> <!-- Groups the footer navigation links -->
+
+                <a href="index.html">Home</a> <!-- Homepage link -->
+
+                <a href="menu.html">Menu</a> <!-- Menu page link -->
+
+                <a href="locations.html">Locations</a> <!-- Locations page link -->
+
+                <a href="contact.html">Contact</a> <!-- Contact page link -->
+
+            </div> <!-- Ends footer navigation -->
+
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-socials"> <!-- Container for the social media links -->
+
+                <a href="https://www.instagram.com/" aria-label="Instagram"> <!-- Link to Instagram; aria-label describes the icon for accessibility -->
+
+                    <i class="fa-brands fa-instagram"></i> <!-- Displays the Instagram icon using Font Awesome -->
+
+                </a> <!-- Ends Instagram link -->
+
+                <a href="https://www.facebook.com/" aria-label="Facebook"> <!-- Link to Facebook -->
+
+                    <i class="fa-brands fa-facebook-f"></i> <!-- Displays the Facebook icon -->
+
+                </a> <!-- Ends Facebook link -->
+
+                <a href="https://www.tiktok.com/" aria-label="TikTok"> <!-- Link to TikTok -->
+
+                    <i class="fa-brands fa-tiktok"></i> <!-- Displays the TikTok icon -->
+
+                </a> <!-- Ends TikTok link -->
+
+            </div> <!-- Ends the social media container -->
+
+
+            <!-- FOOTER SLOGAN -->
+            <div class="footer-text"> <!-- Container for the footer slogan -->
+
+                <p>Life is better with brownies. <span>♥</span></p> <!-- Displays the slogan; span allows the heart to have a separate color -->
+
+            </div> <!-- Ends the slogan container -->
+
+        </div> <!-- Ends the footer container -->
+
+    </footer>
+
+    <!-- Product category filters -->
+<script src="../scripts/menu.js"></script>
+
+<!-- Shopping cart functionality -->
+<script src="../scripts/addToCart.js"></script>
+
+</body>
+</html>

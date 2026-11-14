@@ -1,0 +1,418 @@
+body {
+    background: #100d0b; /* Sets the background color of the entire website */
+    color: white; /* Makes the default text color white */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the default font for the website */
+    margin: 0; /* Removes the default outside spacing */
+    padding: 0; /* Removes the default inside spacing */
+}
+
+/* ======================================== */
+/* MOBILE LAYOUT                            */
+/* ======================================== */
+
+.mobile-leyout {
+    display: none; /* Hides elements with this class */
+}
+
+/* ======================================== */
+/* HEADER - TOP NAVIGATION BAR              */
+/* ======================================== */
+
+header {
+    background-color: rgb(16, 13, 8); /* Sets the dark background color of the header */
+    height: 56px; /* Sets the height of the header */
+}
+
+nav {
+    display: flex; /* Places the logo, navigation links and cart in a row */
+    justify-content: space-between; /* Creates space between the three main navigation elements */
+    align-items: center; /* Centers the elements vertically */
+    height: 100%; /* Makes the navigation fill the header height */
+    padding: 0 100px; /* Adds 100px spacing on the left and right */
+}
+
+.nav-links {
+    display: flex; /* Places the navigation links next to each other */
+    list-style: none; /* Removes the default bullet points */
+    gap: 25px; /* Adds 25px spacing between navigation links */
+    margin: 0; /* Removes default outside spacing */
+    padding: 0; /* Removes default inside spacing */
+}
+
+li {
+    margin: 0; /* Removes outside spacing from list items */
+}
+
+a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Makes links white by default */
+}
+
+/* HEADER LOGO */
+
+header .logo a {
+    display: block; /* Allows the link to have a width and height */
+    width: 200px; /* Sets the logo container width */
+    height: 200px; /* Sets the logo container height */
+    background-image: url("../image/Brownie\ Boss\ Crown\ Logo.png"); /* Loads the Brownie Boss logo */
+    background-size: contain; /* Makes the whole logo fit inside its container */
+    background-repeat: no-repeat; /* Prevents the logo image from repeating */
+    background-position: center; /* Centers the logo image */
+    text-indent: -9999px; /* Moves the logo link text off-screen */
+}
+
+/* SHOPPING CART ICON */
+
+header .cart a {
+    display: block; /* Allows the cart link to have a width and height */
+    width: 35px; /* Sets the cart icon width */
+    height: 35px; /* Sets the cart icon height */
+    background-image: url("../image/Warm\ Bronze\ Shopping\ Cart\ Icon.png"); /* Loads the cart image */
+    background-size: contain; /* Makes the cart image fit inside its container */
+    background-repeat: no-repeat; /* Prevents the cart image from repeating */
+    background-position: center; /* Centers the cart image */
+    text-indent: -9999px; /* Moves the cart link text off-screen */
+}
+
+/* ACTIVE NAVIGATION LINK */
+
+.active-page {
+    color: rgb(207, 129, 67); /* Makes the active navigation link copper-orange */
+    border-bottom: 2px solid rgb(207, 129, 67); /* Adds a copper-orange underline */
+    padding-bottom: 4px; /* Adds spacing between the text and underline */
+    display: inline-block; /* Allows the underline and padding to work properly */
+}
+
+/* ======================================== */
+/* SECTION 1 - HERO SECTION                 */
+/* ======================================== */
+
+.section1 {
+    height: 400px; /* Sets the hero section height */
+    display: flex; /* Enables flexible positioning of the hero content */
+    flex-direction: row; /* Arranges child elements horizontally */
+    background-image: url("../image/backround\ for\ secshone\ 1.png"); /* Loads the brownie background image */
+    background-size: cover; /* Makes the background image cover the entire section */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+/* HERO TEXT CONTAINER */
+
+.section1-text-container {
+    margin-top: 80px; /* Moves the hero text 80px down from the top */
+    margin-left: 30px; /* Moves the hero text 30px away from the left side */
+}
+
+/* SMALL TEXT ABOVE THE MAIN HEADING */
+
+.UperText {
+    color: rgb(207, 129, 67); /* Sets the text color to copper-orange */
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Montserrat', 'Inter', sans-serif; /* Sets the font family */
+    font-weight: 400; /* Uses normal font thickness */
+    letter-spacing: 0.2em; /* Adds extra spacing between letters */
+    font-size: 12px; /* Sets the text size to 12px */
+}
+
+/* MAIN HERO HEADING */
+
+.LowerText {
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Playfair Display', Georgia, serif; /* Uses an elegant serif font */
+    font-size: 52px; /* Makes the main heading large */
+    font-weight: 700; /* Makes the heading bold */
+    line-height: 1.1; /* Controls the spacing between heading lines */
+    color: white; /* Makes the heading white */
+}
+
+/* DESCRIPTION BELOW THE MAIN HEADING */
+
+.LowestText {
+    font-family: 'Inter', 'Helvetica', sans-serif; /* Sets the description font */
+    font-weight: 300; /* Uses a light font weight */
+    color: #f0f0f0; /* Makes the description slightly softer than pure white */
+    margin-top: 10px; /* Adds spacing above the description */
+    font-size: 15px; /* Sets the description text size */
+    line-height: 1.6; /* Adds comfortable spacing between text lines */
+}
+
+
+/* ======================================== */
+/* SECTION 2 - OUR LOCATIONS                */
+/* ======================================== */
+
+.section2 {
+    padding: 25px 80px 40px; /* Adds spacing inside the section */
+    background-color: #100d0b; /* Sets the dark background */
+}
+
+/* SECTION 2 HEADING CONTAINER */
+
+.section2-heading {
+    display: flex; /* Places the heading and description side by side */
+    justify-content: space-between; /* Pushes them to opposite sides */
+    align-items: center; /* Centers both elements vertically */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* OUR LOCATIONS HEADING */
+
+.section2-heading h2 {
+    font-family: 'Playfair Display', Georgia, serif; /* Sets the heading font */
+    font-size: 32px; /* Makes the heading large */
+    font-weight: 700; /* Makes the heading bold */
+    color: white; /* Makes the text white */
+    margin: 0; /* Removes default margins */
+}
+
+/* DESCRIPTION ON THE RIGHT */
+
+.section2-heading p {
+    font-family: 'Inter', Arial, sans-serif; /* Sets the description font */
+    font-size: 14px; /* Sets the text size */
+    line-height: 1.5; /* Adds spacing between lines */
+    color: #b0b0b0; /* Makes the text light gray */
+    margin: 0; /* Removes default margins */
+}
+
+/* LOCATION CARDS AND MAP GRID */
+
+.locations-grid {
+    display: grid; /* Creates a CSS grid layout */
+    grid-template-columns: repeat(3, 1fr) 1.9fr; /* Three equal cards and one larger map */
+    gap: 20px; /* Adds spacing between grid items */
+}
+
+
+/* ======================================== */
+/* LOCATION CARDS                           */
+/* ======================================== */
+
+/* Main location card */
+.location-card {
+    background-color: #14100e; /* Dark card background */
+    border: 1px solid #493024; /* Subtle brown border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Keeps image inside rounded corners */
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks image and information vertically */
+}
+
+/* Store image */
+.location-image {
+    width: 100%; /* Image fills the card width */
+    height: 160px; /* Fixed image height */
+    object-fit: cover; /* Crops image without stretching */
+    display: block; /* Removes extra space below image */
+}
+
+/* Information container */
+.location-info {
+    padding: 12px; /* Adds space inside the card */
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks information vertically */
+    flex-grow: 1; /* Fills remaining card height */
+}
+
+/* Store name */
+.location-info h3 {
+    font-family: Georgia, serif; /* Serif heading font */
+    font-size: 20px; /* Heading size */
+    color: white; /* White text */
+    margin: 0 0 12px; /* Space below heading */
+}
+
+/* Address and opening hours rows */
+.location-detail {
+    display: flex; /* Places icon beside text */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 12px; /* Space between icon and text */
+    margin-bottom: 12px; /* Space below each row */
+}
+
+/* Icons */
+.location-icon {
+    color: #cf8143; /* Orange icon color */
+    font-size: 22px; /* Icon size */
+    flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+/* Address and hours text */
+.location-detail p {
+    font-size: 13px; /* Text size */
+    line-height: 1.5; /* Line spacing */
+    color: #e0e0e0; /* Light gray text */
+    margin: 0; /* Removes default margins */
+}
+
+/* Get Directions button */
+.directions-button {
+    display: block; /* Allows full-width button styling */
+    background-color: #bb6d2f; /* Orange background */
+    color: white; /* White text */
+    text-align: center; /* Centers button text */
+    padding: 10px; /* Adds inside spacing */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 13px; /* Text size */
+    font-weight: 600; /* Makes text bold */
+    margin-top: auto; /* Pushes button to bottom */
+    transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+/* Button hover */
+.directions-button:hover {
+    background-color: #cf8143; /* Lighter orange on hover */
+}
+
+
+/* ======================================== */
+/* LOCATION MAP                             */
+/* ======================================== */
+
+/* Container for the map */
+.location-map {
+    border: 1px solid #493024; /* Brown border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Keeps map inside rounded corners */
+    min-height: 340px; /* Minimum map height */
+}
+
+/* Map iframe */
+.location-map iframe {
+    width: 100%; /* Makes the map fill its container */
+    height: 100%; /* Makes the map fill the available height */
+    min-height: 340px; /* Ensures map is visible */
+    border: none; /* Removes the default iframe border */
+    display: block; /* Removes extra spacing */
+}
+
+.section3 {
+    background-color: #100d0b; /* Sets the features section background */
+    border-top: 1px solid #241c18; /* Adds a subtle line above the features */
+    padding: 30px 20px; /* Adds spacing inside the section */
+}
+
+/* FEATURES CONTAINER */
+
+.features-container {
+    max-width: 1100px; /* Limits the maximum width of the features */
+    margin: 0 auto; /* Centers the features container */
+    display: grid; /* Creates a grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Creates four equally sized feature columns */
+    background-color: transparent; /* Allows the section background to show through */
+}
+
+/* INDIVIDUAL FEATURE */
+
+.feature {
+    display: flex; /* Places the icon and text next to each other */
+    align-items: center; /* Centers the icon and text vertically */
+    justify-content: center; /* Centers the content horizontally */
+    gap: 15px; /* Adds spacing between the icon and text */
+    min-height: 42px; /* Sets the minimum height of each feature */
+    border-right: 1px solid #30241e; /* Adds a subtle vertical divider */
+}
+
+.feature:last-child {
+    border-right: none; /* Removes the divider from the final feature */
+}
+
+/* FEATURE ICON */
+
+.feature img {
+    width: 42px; /* Sets the icon width */
+    height: 42px; /* Sets the icon height */
+    object-fit: contain; /* Makes the whole icon fit without stretching */
+}
+
+/* FEATURE TEXT */
+
+.feature p {
+    color: white; /* Makes the feature text white */
+    font-size: 13px; /* Sets the feature text size */
+    line-height: 1.4; /* Controls spacing between text lines */
+    margin: 0; /* Removes default paragraph margins */
+}
+
+footer {
+    background-color: #100d0b; /* Matches the website background */
+    color: gray; /* Sets the default footer text color */
+    padding: 25px; /* Adds spacing inside the footer */
+    text-align: center; /* Centers text inside elements that inherit this setting */
+    border-top: 1px solid #241c18; /* Adds a subtle line above the footer */
+    box-shadow: none; /* Removes any footer shadow */
+}
+
+/* FOOTER MAIN CONTAINER */
+
+.footer-container {
+    max-width: 1320px; /* Limits the maximum width of the footer content */
+    margin: 0 auto; /* Centers the footer container */
+    display: flex; /* Places footer elements in a horizontal row */
+    align-items: center; /* Centers the footer elements vertically */
+    justify-content: space-between; /* Distributes the elements across the footer */
+    gap: 35px; /* Adds spacing between footer elements */
+}
+
+/* FOOTER LOGO */
+
+.footer-logo img {
+    width: 185px; /* Sets the footer logo width */
+    height: auto; /* Keeps the logo's original proportions */
+    display: block; /* Removes the small default gap below an inline image */
+}
+
+/* FOOTER NAVIGATION */
+
+.footer-nav {
+    display: flex; /* Places navigation links next to each other */
+    align-items: center; /* Centers the links vertically */
+    gap: 35px; /* Adds spacing between navigation links */
+}
+
+.footer-nav a {
+    color: #ffffff; /* Makes navigation links white */
+    text-decoration: none; /* Removes link underlines */
+    font-size: 13px; /* Sets the navigation text size */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-nav a:hover {
+    color: #d18a59; /* Makes links copper-orange when hovered */
+}
+
+/* FOOTER SOCIAL MEDIA ICONS */
+
+.footer-socials {
+    display: flex; /* Places social media icons in one row */
+    align-items: center; /* Centers the icons vertically */
+    gap: 22px; /* Adds spacing between the icons */
+}
+
+.footer-socials a {
+    color: #ffffff; /* Makes the icons white */
+    font-size: 19px; /* Sets the icon size */
+    text-decoration: none; /* Removes link underlines */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-socials a:hover {
+    color: #d18a59; /* Makes the icons copper-orange when hovered */
+}
+
+/* FOOTER SLOGAN */
+
+.footer-text p {
+    color: #a99e98; /* Sets the slogan text to light gray */
+    font-size: 12px; /* Sets the slogan text size */
+    white-space: nowrap; /* Prevents the slogan from wrapping onto multiple lines */
+    margin: 0; /* Removes default paragraph margins */
+}
+
+/* FOOTER HEART */
+
+.footer-text span {
+    color: #d18a59; /* Makes the heart copper-orange */
+    font-size: 16px; /* Makes the heart slightly bigger than the text */
+}

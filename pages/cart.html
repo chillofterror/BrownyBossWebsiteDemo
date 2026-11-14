@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Supports special characters -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Your Cart | Brownie Boss</title>
+
+    <!-- Cart page CSS -->
+    <link rel="stylesheet" href="../styles/stylesCart.css">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ======================================== -->
+    <!-- HEADER                                   -->
+    <!-- ======================================== -->
+
+    <header>
+        <nav>
+
+            <!-- Website logo -->
+            <div class="desktop-item logo">
+                <a href="index.html">Brownie Boss logo</a>
+            </div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Shopping cart -->
+            <div class="desktop-item cart">
+                <a href="cart.html" aria-label="Shopping cart">
+                    Cart
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ======================================== -->
+    <!-- SECTION 1: CART HERO                     -->
+    <!-- ======================================== -->
+
+    <section class="section1">
+
+        <!-- Hero text container -->
+        <div class="section1-text-container">
+
+            <!-- Small heading -->
+            <h6 class="UperText">YOUR CART</h6>
+
+            <!-- Main heading -->
+            <h1 class="LowerText">Your Cart</h1>
+
+            <!-- Description -->
+            <p class="LowestText">
+                Review your items, make any changes, and<br>
+                proceed to checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================== -->
+    <!-- SECTION 2: SHOPPING CART                 -->
+    <!-- ======================================== -->
+
+    <section class="section2">
+
+        <!-- Container for cart items and order summary -->
+        <div class="cart-grid">
+
+            <!-- LEFT CARD: CART ITEMS -->
+            <div class="cart-items-card">
+
+                <!-- Cart heading -->
+                <h2>Your Items (<span id="cart-count">0</span>)</h2>
+
+                <!-- JavaScript will insert selected brownies here -->
+                <div id="cart-products"></div>
+
+                <!-- Return to menu -->
+                <a href="menu.html" class="continue-shopping">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Continue Shopping
+                </a>
+
+            </div> <!-- Ends cart items card -->
+
+            <!-- RIGHT CARD: ORDER SUMMARY -->
+            <div class="order-summary-card">
+
+                <!-- Summary heading -->
+                <h2>Order Summary</h2>
+
+                <!-- Subtotal -->
+                <div class="summary-row">
+                    <span>
+                        Subtotal (<span id="summary-count">0</span> items)
+                    </span>
+                    <span id="subtotal">€0.00</span>
+                </div>
+
+                <!-- Delivery cost -->
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery">€0.00</span>
+                </div>
+
+                <!-- Divider -->
+                <div class="summary-divider"></div>
+
+                <!-- Final total -->
+                <div class="summary-total">
+                    <h3>Total</h3>
+                    <strong id="grand-total">€0.00</strong>
+                </div>
+
+                <!-- Checkout button -->
+                <button type="button" class="checkout-button">
+                    <i class="fa-solid fa-lock"></i>
+                    Proceed to Checkout
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <!-- Payment methods -->
+                <div class="payment-methods">
+                    <p>We accept</p>
+
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa" aria-label="Visa"></i>
+                        <i class="fa-brands fa-cc-mastercard" aria-label="Mastercard"></i>
+                        <i class="fa-brands fa-cc-apple-pay" aria-label="Apple Pay"></i>
+                        <i class="fa-brands fa-google-pay" aria-label="Google Pay"></i>
+                    </div>
+                </div>
+
+            </div> <!-- Ends order summary card -->
+
+        </div> <!-- Ends cart grid -->
+
+    </section> <!-- Ends Section 2 -->
+
+    <!-- Connects the cart JavaScript file -->
+    <script src="../scripts/cart.js"></script>
+
+</body>
+</html>

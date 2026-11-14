@@ -1,0 +1,378 @@
+
+/* ======================================== */
+/* GENERAL WEBSITE STYLING                  */
+/* ======================================== */
+
+body {
+    background: #100d0b; /* Dark website background */
+    color: white; /* Default white text */
+    font-family: Arial, Helvetica, sans-serif; /* Main font */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+}
+
+/* All links */
+a {
+    text-decoration: none; /* Removes underlines */
+    color: white; /* Makes links white */
+}
+
+/* ======================================== */
+/* HEADER                                   */
+/* ======================================== */
+
+header {
+    background-color: rgb(16, 13, 8); /* Dark header */
+    height: 56px; /* Header height */
+}
+
+nav {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Spaces elements */
+    align-items: center; /* Vertically centers elements */
+    height: 100%; /* Fills header */
+    padding: 0 100px; /* Side spacing */
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex; /* Horizontal links */
+    list-style: none; /* Removes bullets */
+    gap: 25px; /* Space between links */
+    margin: 0; /* Removes margin */
+    padding: 0; /* Removes padding */
+}
+
+/* Logo */
+header .logo a {
+    display: block; /* Enables width and height */
+    width: 200px; /* Logo width */
+    height: 200px; /* Logo height */
+    background-image: url("../image/Brownie Boss Crown Logo.png"); /* Logo image */
+    background-size: contain; /* Fits logo */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers logo */
+    text-indent: -9999px; /* Hides text */
+}
+
+/* Cart icon */
+header .cart a {
+    display: block; /* Enables width and height */
+    width: 35px; /* Icon width */
+    height: 35px; /* Icon height */
+    background-image: url("../image/Warm Bronze Shopping Cart Icon.png"); /* Cart image */
+    background-size: contain; /* Fits image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers image */
+    text-indent: -9999px; /* Hides text */
+}
+
+/* ======================================== */
+/* SECTION 1 - HERO                         */
+/* ======================================== */
+
+.section1 {
+    height: 260px; /* Hero height */
+    display: flex; /* Enables flexible layout */
+    align-items: center; /* Centers text vertically */
+    background-image: url("../image/backround for secshone 1.png"); /* Brownie background */
+    background-size: cover; /* Fills the section */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers image */
+    border-bottom: 1px solid #493024; /* Brown bottom border */
+}
+
+/* Hero text container */
+.section1-text-container {
+    margin-left: max(30px, calc((100% - 1200px) / 2)); /* Aligns text with content */
+}
+
+/* Small heading */
+.UperText {
+    color: #cf8143; /* Copper-orange */
+    margin: 0 0 10px; /* Bottom spacing */
+    letter-spacing: 0.2em; /* Letter spacing */
+    font-size: 12px; /* Text size */
+    font-weight: 400; /* Normal weight */
+}
+
+/* Main heading */
+.LowerText {
+    font-family: Georgia, serif; /* Serif font */
+    font-size: 52px; /* Large heading */
+    margin: 0; /* Removes margins */
+    line-height: 1.1; /* Line height */
+}
+
+/* Hero description */
+.LowestText {
+    color: #f0f0f0; /* Light text */
+    font-size: 15px; /* Text size */
+    line-height: 1.6; /* Line spacing */
+    margin-top: 20px; /* Space above description */
+}
+
+
+/* ======================================== */
+/* SECTION 2 - SHOPPING CART                */
+/* ======================================== */
+
+/* Main cart section */
+.section2 {
+    padding: 15px 40px 25px; /* Space around section */
+    background-color: #100d0b; /* Dark background */
+}
+
+/* Two-column layout */
+.cart-grid {
+    display: grid; /* Enables CSS grid */
+    grid-template-columns: 2.1fr 1fr; /* Left card wider */
+    gap: 18px; /* Space between cards */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Centers the grid */
+    align-items: start; /* Aligns cards at the top */
+}
+
+/* Both cards */
+.cart-items-card,
+.order-summary-card {
+    background-color: #1b120e; /* Dark brown background */
+    border: 1px solid #493024; /* Brown border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 24px; /* Inner spacing */
+    min-width: 0; /* Prevents grid overflow */
+}
+
+/* Card headings */
+.cart-items-card h2,
+.order-summary-card h2 {
+    font-family: Georgia, serif; /* Elegant font */
+    font-size: 26px; /* Heading size */
+    margin: 0 0 20px; /* Space below heading */
+}
+
+/* ======================================== */
+/* CART PRODUCTS                            */
+/* ======================================== */
+
+/* Each product row */
+.cart-item {
+    display: flex; /* Places elements horizontally */
+    align-items: center; /* Centers vertically */
+    gap: 20px; /* Space between elements */
+    padding: 10px 0; /* Vertical spacing */
+    border-bottom: 1px solid #493024; /* Row divider */
+}
+
+/* Product image */
+.cart-item-image {
+    width: 110px; /* Image width */
+    height: 85px; /* Image height */
+    object-fit: cover; /* Crops without stretching */
+    border-radius: 9px; /* Rounded corners */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Product text */
+.cart-item-info {
+    flex: 1; /* Takes remaining space */
+    min-width: 0; /* Allows text wrapping */
+}
+
+/* Product name */
+.cart-item-info h3 {
+    font-size: 15px; /* Product heading size */
+    margin: 0 0 6px; /* Space below name */
+}
+
+/* Product description */
+.cart-item-info p {
+    color: #c6beb9; /* Light gray text */
+    font-size: 12px; /* Description size */
+    margin: 0 0 7px; /* Space below description */
+}
+
+/* Product unit price */
+.cart-item-info strong {
+    font-size: 15px; /* Price size */
+}
+
+/* Quantity control container */
+.quantity-controls {
+    display: flex; /* Horizontal buttons */
+    align-items: center; /* Centers vertically */
+    border: 1px solid #694025; /* Brown outline */
+    border-radius: 9px; /* Rounded corners */
+    overflow: hidden; /* Keeps buttons inside border */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Minus and plus buttons */
+.quantity-controls button {
+    background: transparent; /* No background */
+    border: none; /* Removes border */
+    color: white; /* White symbols */
+    width: 35px; /* Button width */
+    height: 35px; /* Button height */
+    font-size: 20px; /* Symbol size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Quantity number */
+.quantity-number {
+    min-width: 25px; /* Number width */
+    text-align: center; /* Centers number */
+    font-size: 14px; /* Text size */
+}
+
+/* Quantity button hover */
+.quantity-controls button:hover {
+    background-color: #493024; /* Brown hover */
+}
+
+/* Product total */
+.item-total {
+    width: 75px; /* Reserves price space */
+    text-align: right; /* Aligns price to right */
+    font-size: 14px; /* Text size */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Remove button */
+.remove-item {
+    background: none; /* Transparent background */
+    border: none; /* Removes border */
+    color: #e8b58c; /* Light bronze */
+    font-size: 19px; /* Icon size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Remove hover */
+.remove-item:hover {
+    color: #ff715f; /* Red hover */
+}
+
+/* Continue shopping link */
+.continue-shopping {
+    display: inline-flex; /* Places arrow and text in row */
+    align-items: center; /* Centers vertically */
+    gap: 12px; /* Space between icon and text */
+    color: #cf8143; /* Orange text */
+    font-size: 14px; /* Text size */
+    font-weight: bold; /* Bold link */
+    margin-top: 25px; /* Space above link */
+}
+
+/* ======================================== */
+/* ORDER SUMMARY                            */
+/* ======================================== */
+
+/* Summary rows */
+.summary-row {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Text left, price right */
+    gap: 12px; /* Space between values */
+    margin-bottom: 22px; /* Space below row */
+    font-size: 14px; /* Text size */
+}
+
+/* Summary divider */
+.summary-divider {
+    height: 1px; /* Thin line */
+    background-color: #694025; /* Brown color */
+    margin: 20px 0; /* Vertical spacing */
+}
+
+/* Total row */
+.summary-total {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Separates label and price */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px; /* Space below */
+}
+
+/* Total label */
+.summary-total h3 {
+    font-family: Georgia, serif; /* Elegant font */
+    font-size: 24px; /* Heading size */
+    margin: 0; /* Removes margins */
+}
+
+/* Total amount */
+.summary-total strong {
+    font-size: 25px; /* Large price */
+}
+
+/* Checkout button */
+.checkout-button {
+    display: flex; /* Places icon and text in row */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers content */
+    gap: 12px; /* Space between elements */
+    width: 100%; /* Full width */
+    background-color: #c77a39; /* Orange background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 17px 10px; /* Button spacing */
+    font-size: 14px; /* Text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Checkout hover */
+.checkout-button:hover {
+    background-color: #df914c; /* Lighter orange */
+}
+
+/* Payment section */
+.payment-methods {
+    text-align: center; /* Centers content */
+    margin-top: 25px; /* Space above */
+}
+
+/* Payment description */
+.payment-methods p {
+    font-size: 12px; /* Small text */
+    color: #cccccc; /* Light gray */
+}
+
+/* Payment icons container */
+.payment-icons {
+    display: flex; /* Places icons horizontally */
+    justify-content: center; /* Centers icons */
+    align-items: center; /* Centers vertically */
+    gap: 12px; /* Space between icons */
+}
+
+/* Payment icons */
+.payment-icons i {
+    font-size: 34px; /* Large payment icons */
+    color: white; /* White icons */
+}
+
+/* ======================================== */
+/* RESPONSIVE CART LAYOUT                   */
+/* ======================================== */
+
+@media (max-width: 950px) {
+    .cart-grid {
+        grid-template-columns: 1fr; /* Stacks cards */
+    }
+}
+
+@media (max-width: 600px) {
+    .section2 {
+        padding: 15px; /* Smaller padding */
+    }
+
+    .cart-item {
+        flex-wrap: wrap; /* Allows row wrapping */
+        gap: 12px; /* Smaller gaps */
+    }
+
+    .cart-item-image {
+        width: 80px; /* Smaller image */
+        height: 70px; /* Smaller image */
+    }
+}

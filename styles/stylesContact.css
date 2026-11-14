@@ -1,0 +1,532 @@
+body {
+    background: #100d0b; /* Sets the background color of the entire website */
+    color: white; /* Makes the default text color white */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the default font for the website */
+    margin: 0; /* Removes the default outside spacing */
+    padding: 0; /* Removes the default inside spacing */
+}
+
+/* ======================================== */
+/* MOBILE LAYOUT                            */
+/* ======================================== */
+
+.mobile-leyout {
+    display: none; /* Hides elements with this class */
+}
+
+/* ======================================== */
+/* HEADER - TOP NAVIGATION BAR              */
+/* ======================================== */
+
+header {
+    background-color: rgb(16, 13, 8); /* Sets the dark background color of the header */
+    height: 56px; /* Sets the height of the header */
+}
+
+nav {
+    display: flex; /* Places the logo, navigation links and cart in a row */
+    justify-content: space-between; /* Creates space between the three main navigation elements */
+    align-items: center; /* Centers the elements vertically */
+    height: 100%; /* Makes the navigation fill the header height */
+    padding: 0 100px; /* Adds 100px spacing on the left and right */
+}
+
+.nav-links {
+    display: flex; /* Places the navigation links next to each other */
+    list-style: none; /* Removes the default bullet points */
+    gap: 25px; /* Adds 25px spacing between navigation links */
+    margin: 0; /* Removes default outside spacing */
+    padding: 0; /* Removes default inside spacing */
+}
+
+li {
+    margin: 0; /* Removes outside spacing from list items */
+}
+
+a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Makes links white by default */
+}
+
+/* HEADER LOGO */
+
+header .logo a {
+    display: block; /* Allows the link to have a width and height */
+    width: 200px; /* Sets the logo container width */
+    height: 200px; /* Sets the logo container height */
+    background-image: url("../image/Brownie\ Boss\ Crown\ Logo.png"); /* Loads the Brownie Boss logo */
+    background-size: contain; /* Makes the whole logo fit inside its container */
+    background-repeat: no-repeat; /* Prevents the logo image from repeating */
+    background-position: center; /* Centers the logo image */
+    text-indent: -9999px; /* Moves the logo link text off-screen */
+}
+
+/* SHOPPING CART ICON */
+
+header .cart a {
+    display: block; /* Allows the cart link to have a width and height */
+    width: 35px; /* Sets the cart icon width */
+    height: 35px; /* Sets the cart icon height */
+    background-image: url("../image/Warm\ Bronze\ Shopping\ Cart\ Icon.png"); /* Loads the cart image */
+    background-size: contain; /* Makes the cart image fit inside its container */
+    background-repeat: no-repeat; /* Prevents the cart image from repeating */
+    background-position: center; /* Centers the cart image */
+    text-indent: -9999px; /* Moves the cart link text off-screen */
+}
+
+/* ACTIVE NAVIGATION LINK */
+
+.active-page {
+    color: rgb(207, 129, 67); /* Makes the active navigation link copper-orange */
+    border-bottom: 2px solid rgb(207, 129, 67); /* Adds a copper-orange underline */
+    padding-bottom: 4px; /* Adds spacing between the text and underline */
+    display: inline-block; /* Allows the underline and padding to work properly */
+}
+
+/* ======================================== */
+/* SECTION 1 - HERO SECTION                 */
+/* ======================================== */
+
+.section1 {
+    height: 400px; /* Sets the hero section height */
+    display: flex; /* Enables flexible positioning of the hero content */
+    flex-direction: row; /* Arranges child elements horizontally */
+    background-image: url("../image/backround\ for\ secshone\ 1.png"); /* Loads the brownie background image */
+    background-size: cover; /* Makes the background image cover the entire section */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+/* HERO TEXT CONTAINER */
+
+.section1-text-container {
+    margin-top: 80px; /* Moves the hero text 80px down from the top */
+    margin-left: 30px; /* Moves the hero text 30px away from the left side */
+}
+
+/* SMALL TEXT ABOVE THE MAIN HEADING */
+
+.UperText {
+    color: rgb(207, 129, 67); /* Sets the text color to copper-orange */
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Montserrat', 'Inter', sans-serif; /* Sets the font family */
+    font-weight: 400; /* Uses normal font thickness */
+    letter-spacing: 0.2em; /* Adds extra spacing between letters */
+    font-size: 12px; /* Sets the text size to 12px */
+}
+
+/* MAIN HERO HEADING */
+
+.LowerText {
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Playfair Display', Georgia, serif; /* Uses an elegant serif font */
+    font-size: 52px; /* Makes the main heading large */
+    font-weight: 700; /* Makes the heading bold */
+    line-height: 1.1; /* Controls the spacing between heading lines */
+    color: white; /* Makes the heading white */
+}
+
+/* DESCRIPTION BELOW THE MAIN HEADING */
+
+.LowestText {
+    font-family: 'Inter', 'Helvetica', sans-serif; /* Sets the description font */
+    font-weight: 300; /* Uses a light font weight */
+    color: #f0f0f0; /* Makes the description slightly softer than pure white */
+    margin-top: 10px; /* Adds spacing above the description */
+    font-size: 15px; /* Sets the description text size */
+    line-height: 1.6; /* Adds comfortable spacing between text lines */
+}
+
+/* EXPLORE OUR MENU BUTTON */
+
+.Menu-Button {
+    display: inline-block; /* Allows padding and spacing to work on the link */
+    border-radius: 9999px; /* Makes the button fully rounded */
+    padding: 12px 30px; /* Adds 12px vertical and 30px horizontal spacing */
+    background: rgb(187, 109, 47); /* Sets the copper-orange button background */
+    border: none; /* Removes any border */
+    color: white; /* Makes the button text white */
+    font-family: 'Inter', sans-serif; /* Sets the button font */
+    font-weight: 500; /* Makes the text medium thickness */
+    cursor: pointer; /* Shows a pointer cursor when hovering */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow under the button */
+}
+
+
+/* ======================================== */
+/* SECTION 2 - CONTACT SECTION              */
+/* ======================================== */
+
+/* Main contact section */
+.section2 {
+    padding: 30px 80px 50px; /* Space around the cards */
+    background-color: #100d0b; /* Dark background */
+}
+
+/* Container for both cards */
+.contact-grid {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: 1.2fr 1fr; /* Left card slightly wider */
+    gap: 15px; /* Space between the cards */
+    max-width: 1150px; /* Limits overall width */
+    margin: 0 auto; /* Centers both cards */
+}
+
+/* Shared styling for both cards */
+.contact-form-card,
+.contact-info-card {
+    background-color: #1b120e; /* Dark brown card */
+    border: 1px solid #493024; /* Subtle brown border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 25px; /* Space inside each card */
+    min-width: 0; /* Prevents grid overflow */
+}
+
+/* Card headings */
+.contact-form-card h2,
+.contact-info-card h2 {
+    font-family: Georgia, serif; /* Elegant heading font */
+    font-size: 26px; /* Heading size */
+    color: white; /* White text */
+    margin: 0 0 20px; /* Space below heading */
+}
+
+/* ======================================== */
+/* CONTACT FORM                             */
+/* ======================================== */
+
+/* Main form */
+.contact-form {
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks fields vertically */
+    gap: 15px; /* Space between fields */
+}
+
+/* Name and email row */
+.form-row {
+    display: grid; /* Creates a grid */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px; /* Space between name and email */
+}
+
+/* Individual form field */
+.form-group {
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Label above input */
+    gap: 6px; /* Space between label and input */
+    min-width: 0; /* Prevents overflow */
+}
+
+/* Input labels */
+.form-group label {
+    font-size: 13px; /* Label size */
+    color: #f0f0f0; /* Light text */
+    font-weight: 500; /* Medium font weight */
+}
+
+/* Required field star */
+.form-group label span {
+    color: #e24b36; /* Red star */
+}
+
+/* Input fields, dropdown and textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Fills the available width */
+    box-sizing: border-box; /* Includes padding in width */
+    background-color: #261b16; /* Dark brown input */
+    border: 1px solid #594033; /* Brown border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Space inside fields */
+    color: white; /* White text */
+    font-family: Arial, sans-serif; /* Consistent font */
+    font-size: 13px; /* Text size */
+}
+
+/* Placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a69c96; /* Muted gray */
+}
+
+/* Message box */
+.form-group textarea {
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 90px; /* Minimum height */
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none; /* Removes default outline */
+    border-color: #cf8143; /* Orange border */
+}
+
+/* Send Message button */
+.send-button {
+    width: 100%; /* Full-width button */
+    padding: 13px; /* Space inside button */
+    background-color: #c77a39; /* Copper-orange background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Text size */
+    font-weight: 600; /* Bold text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.2s; /* Smooth hover */
+}
+
+/* Button hover */
+.send-button:hover {
+    background-color: #df914c; /* Lighter orange */
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .section2 {
+        padding: 25px 20px; /* Smaller side spacing */
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stacks both cards */
+    }
+
+    .form-row {
+        grid-template-columns: 1fr; /* Stacks name and email */
+    }
+}
+
+
+/* ======================================== */
+/* CONTACT INFORMATION CARD                 */
+/* ======================================== */
+
+/* Right contact card */
+.contact-info-card {
+    background-color: #1b120e; /* Dark brown fallback */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(20, 12, 8, 0.98) 0%,
+            rgba(20, 12, 8, 0.9) 55%,
+            rgba(20, 12, 8, 0.2) 100%
+        ), /* Dark overlay for readable text */
+        url("../image/contact-brownies.png"); /* Brownie image */
+
+    background-size: cover; /* Fills the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+
+/* Container for contact details */
+.contact-details {
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks contact details */
+    gap: 14px; /* Space between each item */
+}
+
+/* Individual contact row */
+.contact-item {
+    display: flex; /* Places icon next to text */
+    align-items: center; /* Vertically centers content */
+    gap: 16px; /* Space between icon and text */
+}
+
+/* Icon background */
+.contact-icon {
+    width: 52px; /* Icon container width */
+    height: 44px; /* Icon container height */
+    background: linear-gradient(135deg, #5a2d0e, #a35c22); /* Brown-orange gradient */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Enables centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+
+/* CONTACT ICONS */
+.contact-icon i {
+    font-size: 23px; /* Sets the icon size */
+    color: white; /* Makes the icons white */
+}
+
+
+/* Contact text container */
+.contact-item-text {
+    display: flex; /* Enables vertical layout */
+    flex-direction: column; /* Stacks heading and information */
+    gap: 4px; /* Space between lines */
+}
+
+/* Contact detail headings */
+.contact-item-text h3 {
+    font-size: 14px; /* Heading size */
+    font-weight: 600; /* Bold heading */
+    color: white; /* White text */
+    margin: 0; /* Removes default margins */
+}
+
+/* Contact detail text */
+.contact-item-text p,
+.contact-item-text a {
+    font-size: 13px; /* Text size */
+    color: #dddddd; /* Light gray */
+    margin: 0; /* Removes default margins */
+}
+
+/* Divider line */
+.contact-divider {
+    width: 100%; /* Full width */
+    height: 1px; /* Thin line */
+    background-color: #694025; /* Brown divider */
+    margin: 24px 0 20px; /* Space around divider */
+}
+
+/* ======================================== */
+/* SOCIAL MEDIA SECTION                     */
+/* ======================================== */
+
+/* Social heading */
+.social-section h3 {
+    font-family: Georgia, serif; /* Serif font */
+    font-size: 23px; /* Heading size */
+    color: white; /* White heading */
+    margin: 0 0 6px; /* Space below heading */
+}
+
+/* Social description */
+.social-section p {
+    font-size: 13px; /* Description size */
+    color: #bbbbbb; /* Light gray text */
+    margin: 0 0 15px; /* Space below description */
+}
+
+/* Social buttons container */
+.social-links {
+    display: flex; /* Places buttons horizontally */
+    gap: 12px; /* Space between buttons */
+}
+
+/* Individual social button */
+.social-links a {
+    width: 42px; /* Button width */
+    height: 42px; /* Button height */
+    background: linear-gradient(135deg, #5a2d0e, #38200f); /* Dark gradient */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Enables centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    color: white; /* White icons */
+    transition: background-color 0.2s, transform 0.2s; /* Smooth hover */
+}
+
+
+/* SOCIAL MEDIA ICONS */
+.social-links i {
+    font-size: 24px; /* Sets the icon size */
+    color: white; /* Makes the icons white */
+}
+
+
+/* Facebook and TikTok symbols */
+.social-letter {
+    font-size: 27px; /* Makes the symbol large */
+    font-weight: bold; /* Bold symbol */
+    line-height: 1; /* Keeps symbol centered */
+}
+
+/* Hover effect */
+.social-links a:hover {
+    background: #a35c22; /* Orange background */
+    transform: translateY(-3px); /* Moves button slightly upward */
+}
+
+
+/* ======================================== */
+/* FOOTER                                   */
+/* ======================================== */
+
+footer {
+    background-color: #100d0b; /* Matches the website background */
+    color: gray; /* Sets the default footer text color */
+    padding: 25px; /* Adds spacing inside the footer */
+    text-align: center; /* Centers text inside elements that inherit this setting */
+    border-top: 1px solid #241c18; /* Adds a subtle line above the footer */
+    box-shadow: none; /* Removes any footer shadow */
+}
+
+/* FOOTER MAIN CONTAINER */
+
+.footer-container {
+    max-width: 1320px; /* Limits the maximum width of the footer content */
+    margin: 0 auto; /* Centers the footer container */
+    display: flex; /* Places footer elements in a horizontal row */
+    align-items: center; /* Centers the footer elements vertically */
+    justify-content: space-between; /* Distributes the elements across the footer */
+    gap: 35px; /* Adds spacing between footer elements */
+}
+
+/* FOOTER LOGO */
+
+.footer-logo img {
+    width: 185px; /* Sets the footer logo width */
+    height: auto; /* Keeps the logo's original proportions */
+    display: block; /* Removes the small default gap below an inline image */
+}
+
+/* FOOTER NAVIGATION */
+
+.footer-nav {
+    display: flex; /* Places navigation links next to each other */
+    align-items: center; /* Centers the links vertically */
+    gap: 35px; /* Adds spacing between navigation links */
+}
+
+.footer-nav a {
+    color: #ffffff; /* Makes navigation links white */
+    text-decoration: none; /* Removes link underlines */
+    font-size: 13px; /* Sets the navigation text size */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-nav a:hover {
+    color: #d18a59; /* Makes links copper-orange when hovered */
+}
+
+/* FOOTER SOCIAL MEDIA ICONS */
+
+.footer-socials {
+    display: flex; /* Places social media icons in one row */
+    align-items: center; /* Centers the icons vertically */
+    gap: 22px; /* Adds spacing between the icons */
+}
+
+.footer-socials a {
+    color: #ffffff; /* Makes the icons white */
+    font-size: 19px; /* Sets the icon size */
+    text-decoration: none; /* Removes link underlines */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-socials a:hover {
+    color: #d18a59; /* Makes the icons copper-orange when hovered */
+}
+
+/* FOOTER SLOGAN */
+
+.footer-text p {
+    color: #a99e98; /* Sets the slogan text to light gray */
+    font-size: 12px; /* Sets the slogan text size */
+    white-space: nowrap; /* Prevents the slogan from wrapping onto multiple lines */
+    margin: 0; /* Removes default paragraph margins */
+}
+
+/* FOOTER HEART */
+
+.footer-text span {
+    color: #d18a59; /* Makes the heart copper-orange */
+    font-size: 16px; /* Makes the heart slightly bigger than the text */
+}

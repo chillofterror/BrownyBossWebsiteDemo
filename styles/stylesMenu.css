@@ -1,0 +1,365 @@
+body {
+    background: #100d0b; /* Sets the background color of the entire website */
+    color: white; /* Makes the default text color white */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the default font for the website */
+    margin: 0; /* Removes the default outside spacing */
+    padding: 0; /* Removes the default inside spacing */
+}
+
+/* ======================================== */
+/* MOBILE LAYOUT                            */
+/* ======================================== */
+
+.mobile-leyout {
+    display: none; /* Hides elements with this class */
+}
+
+/* ======================================== */
+/* HEADER - TOP NAVIGATION BAR              */
+/* ======================================== */
+
+header {
+    background-color: rgb(16, 13, 8); /* Sets the dark background color of the header */
+    height: 56px; /* Sets the height of the header */
+}
+
+nav {
+    display: flex; /* Places the logo, navigation links and cart in a row */
+    justify-content: space-between; /* Creates space between the three main navigation elements */
+    align-items: center; /* Centers the elements vertically */
+    height: 100%; /* Makes the navigation fill the header height */
+    padding: 0 100px; /* Adds 100px spacing on the left and right */
+}
+
+.nav-links {
+    display: flex; /* Places the navigation links next to each other */
+    list-style: none; /* Removes the default bullet points */
+    gap: 25px; /* Adds 25px spacing between navigation links */
+    margin: 0; /* Removes default outside spacing */
+    padding: 0; /* Removes default inside spacing */
+}
+
+li {
+    margin: 0; /* Removes outside spacing from list items */
+}
+
+a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Makes links white by default */
+}
+
+/* HEADER LOGO */
+
+header .logo a {
+    display: block; /* Allows the link to have a width and height */
+    width: 200px; /* Sets the logo container width */
+    height: 200px; /* Sets the logo container height */
+    background-image: url("../image/Brownie\ Boss\ Crown\ Logo.png"); /* Loads the Brownie Boss logo */
+    background-size: contain; /* Makes the whole logo fit inside its container */
+    background-repeat: no-repeat; /* Prevents the logo image from repeating */
+    background-position: center; /* Centers the logo image */
+    text-indent: -9999px; /* Moves the logo link text off-screen */
+}
+
+/* SHOPPING CART ICON */
+
+header .cart a {
+    display: block; /* Allows the cart link to have a width and height */
+    width: 35px; /* Sets the cart icon width */
+    height: 35px; /* Sets the cart icon height */
+    background-image: url("../image/Warm\ Bronze\ Shopping\ Cart\ Icon.png"); /* Loads the cart image */
+    background-size: contain; /* Makes the cart image fit inside its container */
+    background-repeat: no-repeat; /* Prevents the cart image from repeating */
+    background-position: center; /* Centers the cart image */
+    text-indent: -9999px; /* Moves the cart link text off-screen */
+}
+
+/* ACTIVE NAVIGATION LINK */
+
+.active-page {
+    color: rgb(207, 129, 67); /* Makes the active navigation link copper-orange */
+    border-bottom: 2px solid rgb(207, 129, 67); /* Adds a copper-orange underline */
+    padding-bottom: 4px; /* Adds spacing between the text and underline */
+    display: inline-block; /* Allows the underline and padding to work properly */
+}
+
+.section1 {
+    height: 400px; /* Sets the hero section height */
+    display: flex; /* Enables flexible positioning of the hero content */
+    flex-direction: row; /* Arranges child elements horizontally */
+    background-image: url("../image/backround\ for\ secshone\ 1.png"); /* Loads the brownie background image */
+    background-size: cover; /* Makes the background image cover the entire section */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+/* HERO TEXT CONTAINER */
+
+.section1-text-container {
+    margin-top: 80px; /* Moves the hero text 80px down from the top */
+    margin-left: 30px; /* Moves the hero text 30px away from the left side */
+}
+
+/* SMALL TEXT ABOVE THE MAIN HEADING */
+
+.UperText {
+    color: rgb(207, 129, 67); /* Sets the text color to copper-orange */
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Montserrat', 'Inter', sans-serif; /* Sets the font family */
+    font-weight: 400; /* Uses normal font thickness */
+    letter-spacing: 0.2em; /* Adds extra spacing between letters */
+    font-size: 12px; /* Sets the text size to 12px */
+}
+
+/* MAIN HERO HEADING */
+
+.LowerText {
+    margin: 0; /* Removes default heading margins */
+    font-family: 'Playfair Display', Georgia, serif; /* Uses an elegant serif font */
+    font-size: 52px; /* Makes the main heading large */
+    font-weight: 700; /* Makes the heading bold */
+    line-height: 1.1; /* Controls the spacing between heading lines */
+    color: white; /* Makes the heading white */
+}
+
+/* DESCRIPTION BELOW THE MAIN HEADING */
+
+.LowestText {
+    font-family: 'Inter', 'Helvetica', sans-serif; /* Sets the description font */
+    font-weight: 300; /* Uses a light font weight */
+    color: #f0f0f0; /* Makes the description slightly softer than pure white */
+    margin-top: 10px; /* Adds spacing above the description */
+    font-size: 15px; /* Sets the description text size */
+    line-height: 1.6; /* Adds comfortable spacing between text lines */
+}
+
+/* EXPLORE OUR MENU BUTTON */
+
+.Menu-Button {
+    display: inline-block; /* Allows padding and spacing to work on the link */
+    border-radius: 9999px; /* Makes the button fully rounded */
+    padding: 12px 30px; /* Adds 12px vertical and 30px horizontal spacing */
+    background: rgb(187, 109, 47); /* Sets the copper-orange button background */
+    border: none; /* Removes any border */
+    color: white; /* Makes the button text white */
+    font-family: 'Inter', sans-serif; /* Sets the button font */
+    font-weight: 500; /* Makes the text medium thickness */
+    cursor: pointer; /* Shows a pointer cursor when hovering */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow under the button */
+}
+
+.section2 {
+    padding: 60px 80px;
+}
+
+/* Container for the filter buttons */
+.products-Buttons-Grid {
+    display: grid; /* Creates a grid layout for the product cards */
+    grid-template-columns: repeat(6, 1fr); /* Creates four equally sized columns */
+    margin-top: -40px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+/* Base style for your <button> elements */
+/* Base style for your <button> elements */
+.Button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(187, 109, 47); /* Copper/bronze outline */
+    border-radius: 9999px; /* Makes them pill-shaped */
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 12px 0; /* Balanced vertical padding */
+    width: 100%;     /* Forces every button to fill its grid cell evenly */
+    display: block;
+}
+
+/* Hover effect */
+.Button:hover {
+    border-color: rgb(207, 129, 67);
+    background-color: rgba(187, 109, 47, 0.1);
+}
+
+/* Active/Selected button style */
+.Button.active {
+    background-color: rgb(187, 109, 47);
+    color: white;
+    border-color: rgb(187, 109, 47);
+}
+
+.products-grid {
+    display: grid; /* Creates a grid layout for the product cards */
+    grid-template-columns: repeat(4, 1fr); /* Creates four equally sized columns */
+    gap: 20px; /* Adds 20px spacing between product cards */
+}
+
+.product-card {
+    background-color: #14100e; /* Sets the card background to a nearly black color */
+    border: 1px solid #29211d; /* Adds a subtle dark border around the card */
+    border-radius: 12px; /* Rounds the card corners */
+    overflow: hidden; /* Prevents images and content from extending outside rounded corners */
+    display: flex; /* Enables flexible positioning inside the card */
+    flex-direction: column; /* Stacks the card elements vertically */
+    transition: transform 0.2s ease; /* Makes movement smooth when hovering */
+    box-shadow: none; /* Removes extra shadows from the card */
+}
+
+.product-card:hover {
+    transform: translateY(-4px); /* Moves the card upward by 4px when hovered */
+}
+
+.product-card img {
+    width: 100%; /* Makes the image fill the entire card width */
+    height: 180px; /* Sets a fixed image height */
+    object-fit: cover; /* Crops the image to fill the space without stretching */
+}
+
+.product-info {
+    padding: 16px; /* Adds spacing inside the information area */
+    display: flex; /* Enables flexible positioning */
+    flex-direction: column; /* Stacks the text, price and button vertically */
+    flex-grow: 1; /* Allows the information area to fill the available card height */
+}
+
+/* PRODUCT NAME */
+
+.product-info h3 {
+    font-family: 'Playfair Display', Georgia, serif; /* Uses the serif font for product names */
+    font-size: 1.15rem; /* Sets the product name size */
+    margin: 0 0 8px 0; /* Adds 8px spacing below the name */
+    color: white; /* Makes the product name white */
+}
+
+/* PRODUCT DESCRIPTION */
+
+.product-desc {
+    font-family: 'Inter', sans-serif; /* Sets the description font */
+    font-size: 0.85rem; /* Makes the description smaller than the product name */
+    color: #b0b0b0; /* Makes the description light gray */
+    margin: 0 0 16px 0; /* Adds 16px spacing below the description */
+    flex-grow: 1; /* Pushes the price and button toward the bottom of the card */
+}
+
+/* PRODUCT PRICE AND BUTTON CONTAINER */
+
+.product-footer {
+    display: flex; /* Enables flexible positioning */
+    flex-direction: column; /* Places the price above the button */
+    gap: 12px; /* Adds 12px spacing between the price and button */
+    margin-top: auto; /* Pushes the container to the bottom of the card */
+}
+
+/* PRODUCT PRICE */
+
+.price {
+    font-family: 'Inter', sans-serif; /* Sets the price font */
+    font-weight: 600; /* Makes the price semi-bold */
+    font-size: 1.1rem; /* Sets the price size */
+    color: white; /* Makes the price white */
+}
+
+/* ADD TO CART BUTTON */
+
+.add-to-cart-btn {
+    width: 100%; /* Makes the button fill the card's available width */
+    background-color: rgb(187, 109, 47); /* Sets the copper-orange background */
+    color: white; /* Makes the button text white */
+    border: none; /* Removes the default button border */
+    border-radius: 9999px; /* Makes the button fully rounded */
+    padding: 10px 16px; /* Adds spacing inside the button */
+    font-family: 'Inter', sans-serif; /* Sets the button font */
+    font-size: 0.85rem; /* Sets the button text size */
+    font-weight: 500; /* Uses medium font thickness */
+    cursor: pointer; /* Shows the pointer cursor on hover */
+    transition: background-color 0.2s; /* Smoothly changes the background color */
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(207, 129, 67); /* Makes the button lighter when hovered */
+}
+
+footer {
+    background-color: #100d0b; /* Matches the website background */
+    color: gray; /* Sets the default footer text color */
+    padding: 25px; /* Adds spacing inside the footer */
+    text-align: center; /* Centers text inside elements that inherit this setting */
+    border-top: 1px solid #241c18; /* Adds a subtle line above the footer */
+    box-shadow: none; /* Removes any footer shadow */
+}
+
+/* FOOTER MAIN CONTAINER */
+
+.footer-container {
+    max-width: 1320px; /* Limits the maximum width of the footer content */
+    margin: 0 auto; /* Centers the footer container */
+    display: flex; /* Places footer elements in a horizontal row */
+    align-items: center; /* Centers the footer elements vertically */
+    justify-content: space-between; /* Distributes the elements across the footer */
+    gap: 35px; /* Adds spacing between footer elements */
+}
+
+/* FOOTER LOGO */
+
+.footer-logo img {
+    width: 185px; /* Sets the footer logo width */
+    height: auto; /* Keeps the logo's original proportions */
+    display: block; /* Removes the small default gap below an inline image */
+}
+
+/* FOOTER NAVIGATION */
+
+.footer-nav {
+    display: flex; /* Places navigation links next to each other */
+    align-items: center; /* Centers the links vertically */
+    gap: 35px; /* Adds spacing between navigation links */
+}
+
+.footer-nav a {
+    color: #ffffff; /* Makes navigation links white */
+    text-decoration: none; /* Removes link underlines */
+    font-size: 13px; /* Sets the navigation text size */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-nav a:hover {
+    color: #d18a59; /* Makes links copper-orange when hovered */
+}
+
+/* FOOTER SOCIAL MEDIA ICONS */
+
+.footer-socials {
+    display: flex; /* Places social media icons in one row */
+    align-items: center; /* Centers the icons vertically */
+    gap: 22px; /* Adds spacing between the icons */
+}
+
+.footer-socials a {
+    color: #ffffff; /* Makes the icons white */
+    font-size: 19px; /* Sets the icon size */
+    text-decoration: none; /* Removes link underlines */
+    transition: color 0.3s; /* Makes color changes smooth */
+}
+
+.footer-socials a:hover {
+    color: #d18a59; /* Makes the icons copper-orange when hovered */
+}
+
+/* FOOTER SLOGAN */
+
+.footer-text p {
+    color: #a99e98; /* Sets the slogan text to light gray */
+    font-size: 12px; /* Sets the slogan text size */
+    white-space: nowrap; /* Prevents the slogan from wrapping onto multiple lines */
+    margin: 0; /* Removes default paragraph margins */
+}
+
+/* FOOTER HEART */
+
+.footer-text span {
+    color: #d18a59; /* Makes the heart copper-orange */
+    font-size: 16px; /* Makes the heart slightly bigger than the text */
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylesLocations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header> <!-- Starts the website header -->
+
+        <nav> <!-- Starts the navigation bar -->
+
+            <!-- LOGO -->
+            <div class="desktop-item logo"> <!-- Container for the website logo -->
+                <a href="index.html">Browny Boss logo</a> <!-- Clickable logo that returns to the homepage -->
+            </div> <!-- Ends the logo container -->
+
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links"> <!-- Creates a list of navigation links -->
+
+                <li><a href="index.html" class="button-home">Home</a></li> <!-- Homepage link, highlighted as the active page -->
+
+                <li><a href="menu.html" class="button-menu">Menu</a></li> <!-- Opens the menu page -->
+
+                <li><a href="locations.html" class="button-locations active-page">Locations</a></li> <!-- Opens the locations page -->
+
+                <li><a href="contact.html" class="desktop-contacts">Contact</a></li> <!-- Opens the contact page -->
+
+            </ul> <!-- Ends the navigation links list -->
+
+            <!-- SHOPPING CART -->
+            <div class="desktop-item cart"> <!-- Container for the shopping cart -->
+
+                <a href="cart.html" class="cart">Cart</a> <!-- Shopping cart link; destination has not been set yet -->
+
+            </div> <!-- Ends the shopping cart container -->
+
+        </nav> <!-- Ends the navigation bar -->
+
+    </header> <!-- Ends the header -->
+
+    <!-- SECTION 1: Main hero section with the background image and welcome text -->
+    <section class="section1"> <!-- Starts the first section -->
+
+        <div class="section1-text-container"> <!-- Groups the hero text and button together -->
+
+            <h6 class="UperText">OUR LOCATIONS</h6> <!-- Small introductory text above the main heading -->
+
+            <h1 class="LowerText">Find Your Nearest</h1> <!-- Main website heading; br moves the second part to a new line -->
+
+            <h6 class="LowestText">Visit one of our locations and experience <br> freshly baked, premium brownies in person.</h6> <!-- Description below the heading -->
+
+        </div> <!-- Ends the hero text container -->
+
+    </section> <!-- Ends Section 1 -->
+
+
+<!-- SECTION 2: Our Locations -->
+<section class="section2">
+
+    <!-- Container for the section heading -->
+    <div class="section2-heading">
+
+        <!-- Main heading -->
+        <h2>Our Locations</h2>
+
+        <!-- Description on the right -->
+        <p>Same great brownies.<br>
+           Multiple locations to serve you better.</p>
+
+    </div> <!-- Ends section heading -->
+
+    <!-- Container for location cards and map -->
+     <div class="locations-grid">
+    
+<!-- LOCATION 1: RIGA CENTRAL -->
+<div class="location-card">
+
+    <!-- Store image -->
+    <img src="../image/Brownie Boss Café L1.png"
+         alt="Brownie Boss Riga Central"
+         class="location-image">
+
+    <!-- Container for store information -->
+    <div class="location-info">
+
+        <!-- Store name -->
+        <h3>Riga Central</h3>
+
+        <!-- Store address -->
+        <div class="location-detail">
+            <span class="location-icon">📍</span>
+            <p>Brīvības iela 45, Rīga,<br>LV-1010</p>
+        </div>
+
+        <!-- Store opening hours -->
+        <div class="location-detail">
+            <span class="location-icon">◷</span>
+            <p>Mon – Sun<br>09:00 – 21:00</p>
+        </div>
+
+        <!-- Directions button -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Brivibas+iela+45+Riga"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="directions-button">
+            Get Directions →
+        </a>
+
+    </div> <!-- Ends location information -->
+
+</div> <!-- Ends Riga Central card -->
+
+
+
+<!-- LOCATION 2: VALMIERA -->
+<div class="location-card">
+
+    <!-- Store image -->
+    <img src="../image/Brownie Boss Café L2.png"
+         alt="Brownie Boss Valmiera"
+         class="location-image">
+
+    <!-- Container for store information -->
+    <div class="location-info">
+
+        <!-- Store name -->
+        <h3>Valmiera</h3>
+
+        <!-- Store address -->
+        <div class="location-detail">
+            <span class="location-icon">📍</span>
+            <p>Rīgas iela 12, Valmiera,<br>LV-4201</p>
+        </div>
+
+        <!-- Store opening hours -->
+        <div class="location-detail">
+            <span class="location-icon">◷</span>
+            <p>Mon – Sun<br>09:00 – 20:00</p>
+        </div>
+
+        <!-- Directions button -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Rigas+iela+12+Valmiera+Latvia"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="directions-button">
+            Get Directions →
+        </a>
+
+    </div> <!-- Ends location information -->
+
+</div> <!-- Ends Valmiera card -->
+
+
+<!-- LOCATION 3: SMILTENE -->
+<div class="location-card">
+
+    <!-- Store image -->
+    <img src="../image/Brownie Boss Café L3.png"
+         alt="Brownie Boss Smiltene"
+         class="location-image">
+
+    <!-- Container for store information -->
+    <div class="location-info">
+
+        <!-- Store name -->
+        <h3>Smiltene</h3>
+
+        <!-- Store address -->
+        <div class="location-detail">
+            <span class="location-icon">📍</span>
+            <p>Dārza iela 5, Smiltene,<br>LV-4729</p>
+        </div>
+
+        <!-- Store opening hours -->
+        <div class="location-detail">
+            <span class="location-icon">◷</span>
+            <p>Mon – Sun<br>10:00 – 20:00</p>
+        </div>
+
+        <!-- Directions button -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Darza+iela+5+Smiltene+Latvia"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="directions-button">
+            Get Directions →
+        </a>
+
+    </div> <!-- Ends location information -->
+
+</div> <!-- Ends Smiltene card -->
+
+
+<!-- MAP CONTAINER -->
+<div class="location-map">
+
+    <!-- Interactive map of Latvia -->
+    <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=23.5%2C56.5%2C26.5%2C58.2&layer=mapnik"
+        title="Map of Brownie Boss locations in Latvia"
+        loading="lazy">
+    </iframe>
+
+</div> <!-- Ends map container -->
+
+</div> <!-- Ends locations grid -->
+
+</section> <!-- Ends Section 2 -->
+
+<section class="section3"> <!-- Starts the features section -->
+
+        <div class="features-container"> <!-- Container that arranges the four features in columns -->
+
+
+            <!-- FEATURE 1: Handmade -->
+            <div class="feature"> <!-- Starts the first feature -->
+
+                <img src="../image/handmade icon.png" alt="Handmade"> <!-- Displays the handmade leaf icon -->
+
+                <p>Handmade<br>with love</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the first feature -->
+
+
+            <!-- FEATURE 2: Premium Ingredients -->
+            <div class="feature"> <!-- Starts the second feature -->
+
+                <img src="../image/prominum ingrident icon.png" alt="Premium"> <!-- Displays the premium ingredients icon -->
+
+                <p>Premium<br>ingredients</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the second feature -->
+
+
+            <!-- FEATURE 3: Fresh Daily -->
+            <div class="feature"> <!-- Starts the third feature -->
+
+                <img src="../image/fresh dayly icon.png" alt="Delivery"> <!-- Displays the delivery truck icon -->
+
+                <p>Fresh daily</p> <!-- Text describing daily freshness -->
+
+            </div> <!-- Ends the third feature -->
+
+
+            <!-- FEATURE 4: Local Business -->
+            <div class="feature"> <!-- Starts the fourth feature -->
+
+                <img src="../image/lcal biznes icon.png" alt="Local business"> <!-- Displays the shield icon -->
+
+                <p>Local<br>business</p> <!-- Feature text displayed on two lines -->
+
+            </div> <!-- Ends the fourth feature -->
+
+        </div> <!-- Ends the features container -->
+
+    </section> <!-- Ends Section 3 -->
+
+    <!-- FOOTER: Bottom area containing the logo, links, social media and slogan -->
+    <footer> <!-- Starts the footer -->
+
+        <div class="footer-container"> <!-- Main container for all footer elements -->
+
+
+            <!-- FOOTER LOGO -->
+            <div class="footer-logo"> <!-- Container for the footer logo -->
+
+                <a href="index.html"> <!-- Makes the logo clickable and links to the homepage -->
+
+                    <img src="../image/Brownie Boss Crown Logo.png" alt="Brownie Boss"> <!-- Displays the Brownie Boss logo -->
+
+                </a> <!-- Ends the logo link -->
+
+            </div> <!-- Ends the footer logo container -->
+
+
+            <!-- FOOTER NAVIGATION -->
+            <div class="footer-nav"> <!-- Groups the footer navigation links -->
+
+                <a href="index.html">Home</a> <!-- Homepage link -->
+
+                <a href="menu.html">Menu</a> <!-- Menu page link -->
+
+                <a href="locations.html">Locations</a> <!-- Locations page link -->
+
+                <a href="contact.html">Contact</a> <!-- Contact page link -->
+
+            </div> <!-- Ends footer navigation -->
+
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-socials"> <!-- Container for the social media links -->
+
+                <a href="https://www.instagram.com/" aria-label="Instagram"> <!-- Link to Instagram; aria-label describes the icon for accessibility -->
+
+                    <i class="fa-brands fa-instagram"></i> <!-- Displays the Instagram icon using Font Awesome -->
+
+                </a> <!-- Ends Instagram link -->
+
+                <a href="https://www.facebook.com/" aria-label="Facebook"> <!-- Link to Facebook -->
+
+                    <i class="fa-brands fa-facebook-f"></i> <!-- Displays the Facebook icon -->
+
+                </a> <!-- Ends Facebook link -->
+
+                <a href="https://www.tiktok.com/" aria-label="TikTok"> <!-- Link to TikTok -->
+
+                    <i class="fa-brands fa-tiktok"></i> <!-- Displays the TikTok icon -->
+
+                </a> <!-- Ends TikTok link -->
+
+            </div> <!-- Ends the social media container -->
+
+
+            <!-- FOOTER SLOGAN -->
+            <div class="footer-text"> <!-- Container for the footer slogan -->
+
+                <p>Life is better with brownies. <span>♥</span></p> <!-- Displays the slogan; span allows the heart to have a separate color -->
+
+            </div> <!-- Ends the slogan container -->
+
+        </div> <!-- Ends the footer container -->
+
+    </footer> <!-- Ends the footer -->
+
+    
+</body>
+</html>
